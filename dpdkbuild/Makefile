@@ -67,7 +67,7 @@ DPDK_CFLAGS += -O0 -g
 endif
 
 ifeq ($(CONFIG_WERROR),y)
-DPDK_CFLAGS += -Werror
+DPDK_CFLAGS += -Werror -Wno-implicit-fallthrough
 else
 DPDK_CFLAGS += -Wno-error
 endif

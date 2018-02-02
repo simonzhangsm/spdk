@@ -79,7 +79,7 @@ endif
 COMMON_CFLAGS += -include $(SPDK_ROOT_DIR)/config.h
 
 ifeq ($(CONFIG_WERROR), y)
-COMMON_CFLAGS += -Werror
+COMMON_CFLAGS += -Werror -Wno-implicit-fallthrough
 endif
 
 ifeq ($(CONFIG_LTO),y)
